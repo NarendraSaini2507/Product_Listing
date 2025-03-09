@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h4 class="text-center my-3">Categories</h4>
+                <ul id="category-listing" class="list-unstyled">
+                    <li onclick="getProduct()" class="active shadow-sm my-2 p-2">All</li>
+                    
+                </ul>
+            </div>
+            <div class="col-9">
+              <div class="p-3">
+                <input class="form-control" placeholder="search product here" type="text" onkeyup="searchProducts()" id="search-inp">
+                
+              </div>
+              <div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <div class="d-flex" id="number-holder">
+                     
+                    </div>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+                <div class="row" id="product-listing">
+                    <div class="card">
+                        <div class="card-image skeleton"></div>
+                        <div class="card-content">
+                          <div class="card-title skeleton"></div>
+                          <div class="card-description skeleton"></div>
+                          <div class="card-button skeleton"></div>
+                        </div>
+                      </div>
+                    
+                      <div class="card">
+                        <div class="card-image skeleton"></div>
+                        <div class="card-content">
+                          <div class="card-title skeleton"></div>
+                          <div class="card-description skeleton"></div>
+                          <div class="card-button skeleton"></div>
+                        </div>
+                      </div>
+                    
+                      <div class="card">
+                        <div class="card-image skeleton"></div>
+                        <div class="card-content">
+                          <div class="card-title skeleton"></div>
+                          <div class="card-description skeleton"></div>
+                          <div class="card-button skeleton"></div>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
